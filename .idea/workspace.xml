@@ -2,37 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63a6dfcf-102d-4168-a291-f39717ebb98d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assets/images/etablissement/hopital/chra.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assets/images/etablissement/hopital/chrk.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assets/images/etablissement/hopital/chrm.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assets/images/etablissement/hopital/chrp.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assets/images/etablissement/hopital/chrt.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assets/images/etablissement/hopital/chua.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assets/images/etablissement/hopital/chul.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assets/images/etablissement/hopital/chuo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assets/images/etablissement/hopital/hasl.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assets/images/etablissement/hopital/hceg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/assets/images/etablissement/hopital/hia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/images/assurance/ascoma.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/images/assurance/assinco.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/images/assurance/axa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/images/assurance/cnamgs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/images/assurance/nsia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/images/assurance/ogar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/images/assurance/ogar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/images/assurance/sanlam.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/images/assurance/sunu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/images/assurance/sunu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/superadmin/dashSuperAdminAssurance.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/superadmin/dashSuperAdminEtablissement.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/superadmin/dashSuperAdminMedicament.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DatracV3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DatracV3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SuperAdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SuperAdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/layout_superadmin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/layout_superadmin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MedicamentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MedicamentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/superadmin/dashSuperAdminMedicament.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/superadmin/dashSuperAdminMedicament.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +167,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649842280517</updated>
-      <workItem from="1649842283977" duration="28534000" />
+      <workItem from="1649842283977" duration="29957000" />
     </task>
     <servers />
   </component>

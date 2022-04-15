@@ -77,9 +77,6 @@
                                                     <label class="form-label fw-bolder">Effets Indesirables</label>
                                                     <textarea class="form-control" style="height: 50px" value="{{ $acte->effet_indesir }}" disabled></textarea>
                                                 </div>
-                                                <div class="col-md-12 d-flex flex-column align-content-between">
-                                                    <label class="form-label fw-bolder">Posologie</label>
-                                                    <textarea class="form-control" style="height: 50px" value="{{ $acte->effet_indesir }}" disabled></textarea>
                                                 </div>
                                                 <div class="col-md-12 d-flex flex-column align-content-between">
                                                     <label class="form-label fw-bolder">Indication</label>
@@ -108,44 +105,44 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <form method="POST" enctype="multipart/form-data" action="{{ route('updateEtablissementSuperAdmin') }}">
+                                            <form method="POST" enctype="multipart/form-data" action="{{ route('updateMedicamentSuperAdmin') }}">
                                                 @csrf
                                                 <div class="row">
+                                                    <div class="col-md-12 d-flex flex-column align-content-between d-none">
+                                                        <label class="form-label fw-bolder">Nom Medicament</label>
+                                                        <input type="text" class="form-control mb-1" value="{{ $acte->id }}" name="id">
+                                                    </div>
                                                     <div class="col-md-12 d-flex flex-column align-content-between">
                                                         <label class="form-label fw-bolder">Nom Medicament</label>
-                                                        <input type="text" class="form-control mb-1" value="{{ $acte->nom_commercial }}" disabled>
+                                                        <input type="text" class="form-control mb-1" value="{{ $acte->nom_commercial }}" name="nm">
                                                     </div>
                                                     <div class="col-md-12 d-flex flex-column align-content-between">
                                                         <label class="form-label fw-bolder">DCI</label>
-                                                        <input type="text" class="form-control mb-1" value="{{ $acte->dci }}" disabled>
+                                                        <input type="text" class="form-control mb-1" value="{{ $acte->dci }}" name="dci">
                                                     </div>
                                                     <div class="col-md-12 d-flex flex-column align-content-between">
                                                         <label class="form-label fw-bolder">Taux Remise</label>
-                                                        <input type="text" class="form-control mb-1" value="{{ $acte->taux_rem }}" disabled>
+                                                        <input type="text" class="form-control mb-1" value="{{ $acte->taux_rem }}" name="tr">
                                                     </div>
                                                     <div class="col-md-12 d-flex flex-column align-content-between">
                                                         <label class="form-label fw-bolder">Posologie</label>
-                                                        <textarea class="form-control" style="height: 50px" value="{{ $acte->posologie }}" disabled></textarea>
+                                                        <textarea class="form-control" style="height: 50px" value="{{ $acte->posologie }}" name="poso"></textarea>
                                                     </div>
                                                     <div class="col-md-12 d-flex flex-column align-content-between">
                                                         <label class="form-label fw-bolder">Effets Indesirables</label>
-                                                        <textarea class="form-control" style="height: 50px" value="{{ $acte->effet_indesir }}" disabled></textarea>
-                                                    </div>
-                                                    <div class="col-md-12 d-flex flex-column align-content-between">
-                                                        <label class="form-label fw-bolder">Posologie</label>
-                                                        <textarea class="form-control" style="height: 50px" value="{{ $acte->effet_indesir }}" disabled></textarea>
+                                                        <textarea class="form-control" style="height: 50px" value="{{ $acte->effet_indesir }}" name="effet"></textarea>
                                                     </div>
                                                     <div class="col-md-12 d-flex flex-column align-content-between">
                                                         <label class="form-label fw-bolder">Indication</label>
-                                                        <textarea class="form-control" style="height: 50px" value="{{ $acte->indication }}" disabled></textarea>
+                                                        <textarea class="form-control" style="height: 50px" value="{{ $acte->indication }}" name="indi"></textarea>
                                                     </div>
                                                     <div class="col-md-12 d-flex flex-column align-content-between">
                                                         <label class="form-label fw-bolder">Contre Indication</label>
-                                                        <textarea class="form-control" style="height: 50px" value="{{ $acte->contre_indication }}" disabled></textarea>
+                                                        <textarea class="form-control" style="height: 50px" value="{{ $acte->contre_indication }}" name="ci"></textarea>
                                                     </div>
                                                     <div class="col-md-12 d-flex flex-column align-content-between">
                                                         <label class="form-label fw-bolder">Grossesse Allaitement</label>
-                                                        <textarea class="form-control" style="height: 50px" value="{{ $acte->grossesse_allait }}" disabled></textarea>
+                                                        <textarea class="form-control" style="height: 50px" value="{{ $acte->grossesse_allait }}" name="grosse"></textarea>
                                                     </div>
                                                 </div>
 
@@ -175,46 +172,46 @@
 	              </table>
                 </div>
                 <div class="tab-pane fade" id="bordered-profile" role="tabpanel" aria-labelledby="profile-tab">
-					<form method="POST" enctype="multipart/form-data" action="{{ route('newEtablissementSuperAdmin') }}">
+					<form method="POST" enctype="multipart/form-data" action="{{ route('newMedicamentSuperAdmin') }}">
 						@csrf
 						<div class="card border-0 shadow-none mb-0">
 							<div class="card-body">
                                 <div class="row">
+                                    <div class="col-md-12 d-flex flex-column align-content-between d-none">
+                                        <label class="form-label fw-bolder">Nom Medicament</label>
+                                        <input type="text" class="form-control mb-1" value="{{ old('id') }}" name="id">
+                                    </div>
                                     <div class="col-md-12 d-flex flex-column align-content-between">
                                         <label class="form-label fw-bolder">Nom Medicament</label>
-                                        <input type="text" class="form-control mb-1" value="{{ old('nom_commercial') }}">
+                                        <input type="text" class="form-control mb-1" value="{{ old('nom_commercial') }}" name="nm">
                                     </div>
                                     <div class="col-md-12 d-flex flex-column align-content-between">
                                         <label class="form-label fw-bolder">DCI</label>
-                                        <input type="text" class="form-control mb-1" value="{{ old('dci') }}">
+                                        <input type="text" class="form-control mb-1" value="{{ old('dci') }}" name="dci">
                                     </div>
                                     <div class="col-md-12 d-flex flex-column align-content-between">
                                         <label class="form-label fw-bolder">Taux Remise</label>
-                                        <input type="text" class="form-control mb-1" value="{{ old('taux_rem') }}">
+                                        <input type="text" class="form-control mb-1" value="{{ old('taux_rem') }}" name="tr">
                                     </div>
                                     <div class="col-md-12 d-flex flex-column align-content-between">
                                         <label class="form-label fw-bolder">Posologie</label>
-                                        <textarea class="form-control" style="height: 50px" value="{{ old('posologie') }}"></textarea>
+                                        <textarea class="form-control" style="height: 50px" value="{{ old('posologie') }}" name="poso"></textarea>
                                     </div>
                                     <div class="col-md-12 d-flex flex-column align-content-between">
                                         <label class="form-label fw-bolder">Effets Indesirables</label>
-                                        <textarea class="form-control" style="height: 50px" value="{{ old('effet_indesir') }}"></textarea>
-                                    </div>
-                                    <div class="col-md-12 d-flex flex-column align-content-between">
-                                        <label class="form-label fw-bolder">Posologie</label>
-                                        <textarea class="form-control" style="height: 50px" value="{{ old('effet_indesir') }}"></textarea>
+                                        <textarea class="form-control" style="height: 50px" value="{{ old('effet_indesir') }}" name="effet"></textarea>
                                     </div>
                                     <div class="col-md-12 d-flex flex-column align-content-between">
                                         <label class="form-label fw-bolder">Indication</label>
-                                        <textarea class="form-control" style="height: 50px" value="{{ old('indication') }}"></textarea>
+                                        <textarea class="form-control" style="height: 50px" value="{{ old('indication') }}" name="indi"></textarea>
                                     </div>
                                     <div class="col-md-12 d-flex flex-column align-content-between">
                                         <label class="form-label fw-bolder">Contre Indication</label>
-                                        <textarea class="form-control" style="height: 50px" value="{{ old('contre_indication') }}"></textarea>
+                                        <textarea class="form-control" style="height: 50px" value="{{ old('contre_indication') }}" name="ci"></textarea>
                                     </div>
                                     <div class="col-md-12 d-flex flex-column align-content-between">
                                         <label class="form-label fw-bolder">Grossesse Allaitement</label>
-                                        <textarea class="form-control" style="height: 50px" value="{{ old('grossesse_allait') }}"></textarea>
+                                        <textarea class="form-control" style="height: 50px" value="{{ old('grossesse_allait') }}" name="grosse"></textarea>
                                     </div>
                                 </div>
 
