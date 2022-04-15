@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <title>Dashboard - Datrac</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -64,7 +64,7 @@
           </a>
         </li><!-- End Search Icon-->
 
-        
+
 
         <li class="nav-item dropdown pe-3">
 
@@ -178,15 +178,15 @@
       </li><!-- End Components Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
-          <i class="bi bi-person"></i>
-          <span>Etablissements</span>
+        <a class="nav-link collapsed" href="{{ route('dashSuperAdminEtablissement') }}">
+            <i class="bx bxs-city"></i>
+            <span>Etablissements</span>
         </a>
       </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-faq.html">
-          <i class="bi bi-question-circle"></i>
+        <a class="nav-link collapsed" href="{{ route('dashSuperAdminAssurance') }}">
+          <i class="bi bi-building"></i>
           <span>Assurances</span>
         </a>
       </li><!-- End F.A.Q Page Nav -->
@@ -213,8 +213,8 @@
       </li><!-- End Login Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-error-404.html">
-          <i class="bi bi-dash-circle"></i>
+        <a class="nav-link collapsed" href="{{ route('dashSuperAdminMedicament') }}">
+            <i class="bx bxs-capsule"></i>
           <span>Médicaments</span>
         </a>
       </li><!-- End Error 404 Page Nav -->
@@ -281,7 +281,7 @@
       <!-- You can delete the links only if you purchased the pro version. -->
       <!-- Licensing information: https://bootstrapmade.com/license/ -->
       <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-      Designed by <a href="https://tinsid.com/">TINSID</a>
+      Designed by <a href="https://licabo.com/">LICABO</a>
     </div>
   </footer><!-- End Footer -->
 

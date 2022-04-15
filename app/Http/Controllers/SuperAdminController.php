@@ -61,7 +61,7 @@ class SuperAdminController extends Controller
 
         $new_acte = new Actes();
 
-    	// Get new data 
+    	// Get new data
         $new_acte->quotation = $request->input('quotation');
         $new_acte->libelle = $request->input('libelle');
 
@@ -122,7 +122,7 @@ class SuperAdminController extends Controller
     	$acte_id = $request->input('acte_id');
     	$new_acte = Actes::find($acte_id);
 
-    	// Get new data 
+    	// Get new data
         $new_acte->quotation = $request->input('quotation');
         $new_acte->libelle = $request->input('libelle');
 
